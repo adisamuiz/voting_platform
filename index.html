@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    </head>
+    <body  >
+        <div class="container">
+            <h1>Voting Platform</h1>
+            <h2>Choose your candidate</h2>
+            <table>
+                <tr>
+                    <th>Candidate</th>
+                    <th>No of votes</th>
+                    <th>Vote</th>
+                </tr>
+                <tr class="row1">
+                    <td>Candidate A</td>
+                    <td id="vote1">0</td>
+                    <td><button onclick="increment1()">VOTE</button></td>
+                </tr>
+                <tr class="row2">
+                    <td>Candidate B</td>
+                    <td id="vote2">0</td>
+                    <td><button onclick="increment2()">VOTE</button></td>
+                </tr>
+                <tr class="row3">
+                    <td>Candidate C</td>
+                    <td id="vote3">0</td>
+                    <td><button onclick="increment3()">VOTE</button></td>
+                </tr>
+                <tr class="row4">
+                    <td>Candidate D</td>
+                    <td id="vote4">0</td>
+                    <td><button onclick="increment4()">VOTE</button></td>
+                </tr>
+            </table>
+
+            <button id="savebtn" onclick="save()">SAVE</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

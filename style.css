@@ -1,0 +1,44 @@
+.container{
+    max-width: 80%;
+    border: 1px solid black; 
+    margin: 30px auto;
+    background-image: url("Voting\ Election\ Day\ GIF\ by\ Lo\ Harris.gif");
+    background-size: cover;
+}
+table{
+    /*border: 1px solid black;*/
+    border-collapse: collapse;
+    max-width: 80%;
+    /*justify-content: center;*/
+    margin:auto; 
+    background-color: azure;
+}
+td, th{
+    padding: 8px;
+    text-align: center;
+    font-size: larger;
+    border: 1px solid black;
+    width: 50%;
+    margin: auto;
+
+}
+h1, h2{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+}
+#savebtn{
+    width: 100px;
+    margin: 20px auto;
+    display: block;
+    background-color: rgba(255, 255, 0, 0.897);
+}
+button{
+    background-color: rgba(0, 128, 0, 0.176);
+    border:1px solid black;
+    padding: 8px;
+}
