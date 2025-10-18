@@ -5,11 +5,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body  >
         <div class="container">
-            <h1>Voting Platform</h1>
-            <h2>Choose your candidate</h2>
+            <div class="heading">
+                <h1>Welcome to the Voting Platform</h1>
+                <h1>Voting Platform</h1>
+                <h2>Choose your candidate</h2>
+            </div>
             <table>
                 <tr>
                     <th>Candidate</th>
@@ -39,6 +45,33 @@
             </table>
 
             <button id="savebtn" onclick="save()">SAVE</button>
+        </div>
+
+        <div class="result">
+            <h1 id="res-heading">View Results here</h1>
+            <table>
+                <tr>
+                    <th>Candidate</th>
+                    <th>Total votes</th>
+                </tr>
+                <tr class="row1">
+                    <td>Candidate A</td>
+                    <td id="res1">0</td>
+                </tr>
+                <tr class="row2">
+                    <td>Candidate B</td>
+                    <td id="res2">0</td>
+                </tr>
+                <tr class="row3">
+                    <td>Candidate C</td>
+                    <td id="res3">0</td>
+                </tr>
+                <tr class="row4">
+                    <td>Candidate D</td>
+                    <td id="res4">0</td>
+                </tr>
+            </table>
+            <p id="winner">The winner is:</p>
         </div>
         <script src="index.js"></script>
     </body>
