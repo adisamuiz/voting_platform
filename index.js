@@ -51,16 +51,16 @@ function result() {
     res4.textContent = count4
 
     if (count1 > count2 && count1 > count3 && count1 > count4) {
-        winner.textContent = "Winner: Candidate 1"
+        winner.textContent = "Winner: Candidate A"
     }
     else if (count2 > count1 && count2 > count3 && count2 > count4) {
-        winner.textContent = "Winner: Candidate 2"
+        winner.textContent = "Winner: Candidate B"
     }
     else if (count3 > count1 && count3 > count2 && count3 > count4) {
-        winner.textContent = "Winner: Candidate 3"
+        winner.textContent = "Winner: Candidate C"
     }
     else if (count4 > count1 && count4 > count2 && count4 > count3) {
-        winner.textContent = "Winner: Candidate 4"
+        winner.textContent = "Winner: Candidate D"
     }
     else {
         winner.textContent = "There is a Tie!"
