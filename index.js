@@ -1,65 +1,65 @@
 
 //votes
-vote1 = document.getElementById("vote1")
-vote2 = document.getElementById("vote2")
-vote3 = document.getElementById("vote3")
-vote4 = document.getElementById("vote4")
+let vote = [
+    document.getElementById("vote1"),
+    document.getElementById("vote2"),
+    document.getElementById("vote3"),
+    document.getElementById("vote4")
+]
 
 //results
-res1 = document.getElementById("res1")
-res2 = document.getElementById("res2")
-res3 = document.getElementById("res3")
-res4 = document.getElementById("res4")
+let res = [
+    document.getElementById("res1"),
+    document.getElementById("res2"),
+    document.getElementById("res3"),
+    document.getElementById("res4")
+]
 
 //winner
-winner = document.getElementById("winner")
+let winner = document.getElementById("winner")
 
-let count1 = 0
-let count2 = 0
-let count3 = 0
-let count4 = 0
-
+let count = [0, 0, 0, 0]
 
 function increment1() {
-    count1 = count1 += 1
-    console.log(count1)
-    vote1.innerText = count1
+    count[0]++
+    console.log(count[0])
+    vote[0].innerText = count[0]
 }
 
 function increment2() {
-    count2 = count2 += 1
-    console.log(count2)
-    vote2.innerText = count2
+    count[1]++
+    console.log(count[1])
+    vote[1].innerText = count[1]
 }
 
 function increment3() {
-    count3 = count3 += 1
-    console.log(count3)
-    vote3.innerText = count3
+    count[2]++
+    console.log(count[2])
+    vote[2].innerText = count[2]
 }
 
 function increment4() {
-    count4 = count4 += 1
-    console.log(count4)
-    vote4.innerText = count4
+    count[3]++
+    console.log(count[3])
+    vote[3].innerText = count[3]
 }
 
 function result() {
-    res1.textContent = count1
-    res2.textContent = count2
-    res3.textContent = count3
-    res4.textContent = count4
+    res[0].textContent = count[0]
+    res[1].textContent = count[1]
+    res[2].textContent = count[2]
+    res[3].textContent = count[3]
 
-    if (count1 > count2 && count1 > count3 && count1 > count4) {
+    if (count[0] > count[1] && count[0] > count[2] && count[0] > count[3]) {
         winner.textContent = "Winner: Candidate A"
     }
-    else if (count2 > count1 && count2 > count3 && count2 > count4) {
+    else if (count[1] > count[0] && count[1] > count[2] && count[1] > count[3]) {
         winner.textContent = "Winner: Candidate B"
     }
-    else if (count3 > count1 && count3 > count2 && count3 > count4) {
+    else if (count[2] > count[0] && count[2] > count[1] && count[2] > count[3]) {
         winner.textContent = "Winner: Candidate C"
     }
-    else if (count4 > count1 && count4 > count2 && count4 > count3) {
+    else if (count[3] > count[0] && count[3] > count[1] && count[3] > count[2]) {
         winner.textContent = "Winner: Candidate D"
     }
     else {
@@ -69,23 +69,22 @@ function result() {
 
 function reset() {
 
-    count1 = 0
-    count2 = 0
-    count3 = 0
-    count4 = 0
-
-    vote1.innerText = count1
-    vote2.innerText = count2
-    vote3.innerText = count3
-    vote4.innerText = count4
+    count = [0, 0, 0, 0]
+    
+    vote[0].innerText = count[0]
+    vote[1].innerText = count[1]
+    vote[2].innerText = count[2]
+    vote[3].innerText = count[3]
 
     
-    console.log(count1, count2, count3, count4  )
+    console.log(count)
 }
 
 function save(){
-    result();
+    result();  
     reset();
+      
 }
+
 
 

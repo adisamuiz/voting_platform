@@ -9,70 +9,74 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     </head>
-    <body  >
-        <div class="container">
-            <div class="heading">
-                <h1>Welcome to the Voting Platform</h1>
-                <h1>Voting Platform</h1>
-                <h2>Choose your candidate</h2>
+    <body> 
+        <div id="main">
+            <div class="container">
+                <div class="heading">
+                    <h1>Welcome to the Voting Platform</h1>
+                    <h1>Voting Platform</h1>
+                    <h2>Choose your candidate</h2>
+                </div>
+                <table>
+                    <tr>
+                        <th>Candidate</th>
+                        <th>No of votes</th>
+                        <th>Vote</th>
+                    </tr>
+                    <tr class="row1">
+                        <td>Candidate A</td>
+                        <td id="vote1">0</td>
+                        <td><button onclick="increment1()">VOTE</button></td>
+                    </tr>
+                    <tr class="row2">
+                        <td>Candidate B</td>
+                        <td id="vote2">0</td>
+                        <td><button onclick="increment2()">VOTE</button></td>
+                    </tr>
+                    <tr class="row3">
+                        <td>Candidate C</td>
+                        <td id="vote3">0</td>
+                        <td><button onclick="increment3()">VOTE</button></td>
+                    </tr>
+                    <tr class="row4">
+                        <td>Candidate D</td>
+                        <td id="vote4">0</td>
+                        <td><button onclick="increment4()">VOTE</button></td>
+                    </tr>
+                </table>
+
+                <button id="savebtn" onclick="save()">SAVE</button>
             </div>
-            <table>
-                <tr>
-                    <th>Candidate</th>
-                    <th>No of votes</th>
-                    <th>Vote</th>
-                </tr>
-                <tr class="row1">
-                    <td>Candidate A</td>
-                    <td id="vote1">0</td>
-                    <td><button onclick="increment1()">VOTE</button></td>
-                </tr>
-                <tr class="row2">
-                    <td>Candidate B</td>
-                    <td id="vote2">0</td>
-                    <td><button onclick="increment2()">VOTE</button></td>
-                </tr>
-                <tr class="row3">
-                    <td>Candidate C</td>
-                    <td id="vote3">0</td>
-                    <td><button onclick="increment3()">VOTE</button></td>
-                </tr>
-                <tr class="row4">
-                    <td>Candidate D</td>
-                    <td id="vote4">0</td>
-                    <td><button onclick="increment4()">VOTE</button></td>
-                </tr>
-            </table>
 
-            <button id="savebtn" onclick="save()">SAVE</button>
+            <div class="result">
+                <h1 id="res-heading">View Results here</h1>
+                <table>
+                    <tr>
+                        <th>Candidate</th>
+                        <th>Total votes</th>
+                    </tr>
+                    <tr class="row1">
+                        <td>Candidate A</td>
+                        <td id="res1">0</td>
+                    </tr>
+                    <tr class="row2">
+                        <td>Candidate B</td>
+                        <td id="res2">0</td>
+                    </tr>
+                    <tr class="row3">
+                        <td>Candidate C</td>
+                        <td id="res3">0</td>
+                    </tr>
+                    <tr class="row4">
+                        <td>Candidate D</td>
+                        <td id="res4">0</td>
+                    </tr>
+                </table>
+                <p id="winner">Winner:</p>
+            </div>
         </div>
 
-        <div class="result">
-            <h1 id="res-heading">View Results here</h1>
-            <table>
-                <tr>
-                    <th>Candidate</th>
-                    <th>Total votes</th>
-                </tr>
-                <tr class="row1">
-                    <td>Candidate A</td>
-                    <td id="res1">0</td>
-                </tr>
-                <tr class="row2">
-                    <td>Candidate B</td>
-                    <td id="res2">0</td>
-                </tr>
-                <tr class="row3">
-                    <td>Candidate C</td>
-                    <td id="res3">0</td>
-                </tr>
-                <tr class="row4">
-                    <td>Candidate D</td>
-                    <td id="res4">0</td>
-                </tr>
-            </table>
-            <p id="winner">The winner is:</p>
-        </div>
+
         <script src="index.js"></script>
     </body>
 </html>
